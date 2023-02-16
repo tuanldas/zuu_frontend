@@ -1,11 +1,12 @@
-version: '3'
-
+version: '3.7'
 services:
   app:
     build:
       context: .
-      dockerfile: docker/local.dockerfile
+      dockerfile: docker/Dockerfile
+      target: ${DOCKER_IMAGE}
     volumes:
-      - '.:/app'
+      - '.:/app:delegated'
+      - '/app/node_modules'
     ports:
-      - '${PORT}:3000'
+      - '${DOCKER_APP_PORT-3000}:3000'
