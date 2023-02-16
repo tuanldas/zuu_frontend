@@ -6,7 +6,7 @@ services:
       dockerfile: docker/Dockerfile
       target: ${DOCKER_IMAGE}
     volumes:
-      - '.:/app:delegated'
+      - '.:/app'
       - '/app/node_modules'
     ports:
       - '${DOCKER_APP_PORT-3000}:3000'
