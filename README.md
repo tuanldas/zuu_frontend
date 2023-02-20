@@ -8,6 +8,12 @@ Chuẩn bị môi trường
 cp .env.example .env
 ```
 
+Với môi trường phát triển
+
+```bash
+cp docker-compose-local.yml docker-compose.override.yml
+```
+
 Build Docker images and containers
 
 ```bash
@@ -19,10 +25,4 @@ Chạy dịch vụ
 
 ```bash
 docker compose up -d
-```
-
-Copy node_modules ra môi trường dev
-
-```bash
-docker compose cp app:/app/node_modules ./
 ```

@@ -1,0 +1,21 @@
+services:
+  app:
+    stdin_open: true
+    tty: true
+    volumes:
+      - 'node_modules:/app/node_modules'
+      - type: volume
+        source: node_modules
+        target: /data
+        volume:
+          nocopy: true
+    ports:
+      - '${DOCKER_APP_PORT-3000}:3000'
+
+volumes:
+  node_modules:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOST_PATH_MOUNT_NODE_MODULE_DATA}

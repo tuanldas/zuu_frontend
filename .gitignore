@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# docker
+
+docker-compose.override.yml
 
 # production
 /build
