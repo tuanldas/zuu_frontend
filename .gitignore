@@ -33,3 +33,5 @@ yarn-error.log*
 /.idea/zuu-font-end.iml
 /.idea/sonarlint
 /.idea/php.xml
+/.idea/workspace.xml
+/.idea/zuu_frontend.iml
