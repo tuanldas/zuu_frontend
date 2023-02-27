@@ -26,12 +26,4 @@ npm-debug.log*
 yarn-debug.asdfasdflog*
 yarn-error.log*
 /.env
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/.gitignore
-/.idea/modules.xml
-/.idea/vcs.xml
-/.idea/zuu-font-end.iml
-/.idea/sonarlint
-/.idea/php.xml
-/.idea/workspace.xml
-/.idea/zuu_frontend.iml
+.idea

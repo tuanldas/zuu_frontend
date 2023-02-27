@@ -10,9 +10,11 @@ import {configureStore} from './Store/configStore';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={configureStore()}>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
+        <React.Fragment>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </React.Fragment>
     </Provider>
 );
 
