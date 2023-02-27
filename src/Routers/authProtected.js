@@ -1,5 +1,3 @@
 const AuthProtected = () => {
-  
-}
-
-export default AuthProtected;
+};
+export {AuthProtected};
